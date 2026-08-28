@@ -22,7 +22,6 @@ from .privileged_planner import PrivilegedPlanner
 from .alignment_check import AlignmentCheck
 from .task_shield import TaskShield
 from .melon import MELON
-from .embedding_melon import EmbeddingMELON
 from .promptguard import PromptGuard
 # Pool-side / registration-stage validation defenses.
 from .profile_consistency import ProfileConsistencyCheck
@@ -38,7 +37,6 @@ ALL_DEFENSES = [
     AlignmentCheck,
     TaskShield,
     MELON,
-    EmbeddingMELON,
     ProfileConsistencyCheck,
     ReputationPrior,
     SchemaWhitelist,
@@ -47,7 +45,7 @@ ALL_DEFENSES = [
 __all__ = [
     "DefendedOrchestrator", "NoDefense",
     "PromptGuard", "Spotlighting", "CFGWhitelist", "PrivilegedPlanner",
-    "AlignmentCheck", "TaskShield", "MELON", "EmbeddingMELON",
+    "AlignmentCheck", "TaskShield", "MELON",
     "ProfileConsistencyCheck", "ReputationPrior", "SchemaWhitelist",
     "ALL_DEFENSES",
 ]

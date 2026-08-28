@@ -40,7 +40,7 @@ from orchestrator.orchestrator import Orchestrator
 
 from defenses import (
     NoDefense, PromptGuard, Spotlighting, CFGWhitelist, PrivilegedPlanner,
-    AlignmentCheck, TaskShield, MELON, EmbeddingMELON,
+    AlignmentCheck, TaskShield, MELON,
     ProfileConsistencyCheck, ReputationPrior, SchemaWhitelist,
 )
 
@@ -53,7 +53,6 @@ DEFENSE_REGISTRY = {
     "alignment_check":    AlignmentCheck,
     "task_shield":        TaskShield,
     "melon":              MELON,
-    "embedding_melon":    EmbeddingMELON,
     # Pool-side / registration-stage validation defenses.
     "profile_consistency": ProfileConsistencyCheck,
     "reputation_prior":    ReputationPrior,

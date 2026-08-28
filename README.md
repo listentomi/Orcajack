@@ -1,8 +1,9 @@
 # OrcaJack
 
-The official implementation of our paper "*OrcaJack: Hijacking Agent Orchestration in Open Multi-Agent Systems*", by *Xiang Li, Haining Yu, Wenbo Pan, Hongli Zhang, and Xiaohua Jia.*
+The official implementation of our EMNLP 2026 Findings paper "*OrcaJack: Hijacking Agent Orchestration in Open Multi-Agent Systems*", by *Xiang Li, Haining Yu, Wenbo Pan, Hongli Zhang, and Xiaohua Jia.*
 
-![Multi-Agent Systems](https://img.shields.io/badge/Multi--Agent-Systems-blue.svg?style=plastic)
+![EMNLP 2026 Findings](https://img.shields.io/badge/EMNLP%202026-Findings-blue.svg?style=plastic)
+![Multi-Agent Systems](https://img.shields.io/badge/Multi--Agent-Systems-green.svg?style=plastic)
 ![A2A Protocol](https://img.shields.io/badge/A2A-Protocol-yellow.svg?style=plastic)
 ![Prompt Injection](https://img.shields.io/badge/Prompt-Injection-orange.svg?style=plastic)
 
@@ -128,7 +129,7 @@ python evaluate_defense.py \
              profile_consistency reputation_prior schema_whitelist \
   -y -o results/defense-eval
 ```
-Runtime defenses inspect the profile or the routing decision; registration-stage defenses (`profile_consistency`, `reputation_prior`, `schema_whitelist`) act on the pool before routing. `embedding_melon` is an additional embedding-based MELON variant; `melon` is the token-overlap implementation.
+Runtime defenses inspect the profile or the routing decision; registration-stage defenses (`profile_consistency`, `reputation_prior`, `schema_whitelist`) act on the pool before routing.
 
 ## What is not redistributed
 
@@ -154,9 +155,11 @@ This code is released to support defensive research. It targets the agent-discov
 ## BibTeX
 If you find OrcaJack helpful, please consider citing our paper:
 ```bibtex
-@article{li2026orcajack,
-  title   = {OrcaJack: Hijacking Agent Orchestration in Open Multi-Agent Systems},
-  author  = {Li, Xiang and Yu, Haining and Pan, Wenbo and Zhang, Hongli and Jia, Xiaohua},
-  year    = {2026}
+@inproceedings{li-etal-2026-orcajack,
+  title     = {{O}rca{J}ack: Hijacking Agent Orchestration in Open Multi-Agent Systems},
+  author    = {Li, Xiang and Yu, Haining and Pan, Wenbo and Zhang, Hongli and Jia, Xiaohua},
+  booktitle = {Findings of the Association for Computational Linguistics: {EMNLP} 2026},
+  year      = {2026},
+  publisher = {Association for Computational Linguistics}
 }
 ```
