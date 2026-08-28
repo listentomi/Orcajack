@@ -1,17 +1,14 @@
-# Core pipeline
+# Core pipeline: orchestrator, attack, held-out evaluation
 litellm>=1.40
 pydantic>=2.0
 pyyaml>=6.0
-python-dotenv>=1.0
+python-dotenv>=1.0        # .env loading, used by every entry point
 
-# Stage 1: skill-subset mining
-mlxtend>=0.23
-networkx>=3.0
-python-louvain>=0.16
-sentence-transformers>=2.2
-numpy>=1.24
-pandas>=2.0
+# Stage 1 skill mining (generate_adversarial_agent.py)
+mlxtend>=0.23             # FP-Growth frequent itemsets
+pandas>=1.5               # FP-Growth TransactionEncoder input
 
-# Optional: local (non-API) shadow / generator models
-# torch>=2.0
-# transformers>=4.40
+# Optional, install manually if needed:
+#   transformers  -- required by the PromptGuard defense (downloads a HF model
+#                    on first use) and to load a LOCAL model checkpoint.
+#   torch         -- required alongside transformers for local checkpoints.
