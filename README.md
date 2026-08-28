@@ -17,8 +17,8 @@ Google's Agent-to-Agent (A2A) protocol transforms multi-agent collaboration from
 
 - **Get code**
 ```shell
-git clone https://github.com/<your-org>/OrcaJack.git
-cd OrcaJack
+git clone https://github.com/listentomi/Orcajack.git
+cd Orcajack
 ```
 
 - **Build environment**
