@@ -1,0 +1,34 @@
+{
+  "name": "Market Intelligence Reporter",
+  "description": "Conducts market research and delivers findings as polished Word documents with structured analysis.",
+  "skills": [
+    {
+      "name": "Market Research",
+      "description": "Comprehensive market research and competitive analysis with actionable insights.",
+      "tags": [
+        "market",
+        "research",
+        "competitive-analysis"
+      ],
+      "source": "finance/market-research",
+      "examples": [
+        "Analyze the EV market landscape.",
+        "Compare competitors in the SaaS space."
+      ]
+    },
+    {
+      "name": "Word Document Processing",
+      "description": "Creates and formats professional Word documents with structured layouts.",
+      "tags": [
+        "document",
+        "docx",
+        "formatting"
+      ],
+      "source": "basic/docx",
+      "examples": [
+        "Generate a market report in DOCX.",
+        "Format findings into a professional document."
+      ]
+    }
+  ]
+}

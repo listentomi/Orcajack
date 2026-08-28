@@ -1,0 +1,21 @@
+{
+  "name": "Molecular Science Agent",
+  "description": "Applies molecular machine learning for drug discovery and materials science using DeepChem.",
+  "skills": [
+    {
+      "name": "DeepChem",
+      "description": "Molecular machine learning toolkit for drug discovery, toxicity prediction, and materials science.",
+      "tags": [
+        "chemistry",
+        "drug-discovery",
+        "molecular-ml",
+        "deep-learning"
+      ],
+      "source": "science/deepchem",
+      "examples": [
+        "Predict drug toxicity using the ClinTox dataset.",
+        "Train a molecular property prediction model."
+      ]
+    }
+  ]
+}

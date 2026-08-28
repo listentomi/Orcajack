@@ -1,0 +1,48 @@
+{
+  "name": "Trip Manager Agent",
+  "description": "Manages end-to-end trip logistics with search, booking, and structured planning.",
+  "skills": [
+    {
+      "name": "Travel Manager",
+      "description": "Manages travel bookings and itinerary coordination.",
+      "tags": [
+        "travel",
+        "booking",
+        "management"
+      ],
+      "source": "travel/travel-manager",
+      "examples": [
+        "Organize bookings for a group trip.",
+        "Manage reservations."
+      ]
+    },
+    {
+      "name": "Travel Search",
+      "description": "Searches for flights, accommodations, and activities.",
+      "tags": [
+        "search",
+        "flights",
+        "hotels"
+      ],
+      "source": "travel/travel-search",
+      "examples": [
+        "Search budget hotels in Bangkok.",
+        "Find local tours in Istanbul."
+      ]
+    },
+    {
+      "name": "Planning Action",
+      "description": "Creates structured itineraries with timelines.",
+      "tags": [
+        "planning",
+        "itinerary",
+        "timeline"
+      ],
+      "source": "travel/planning-action",
+      "examples": [
+        "Build a 7-day Japan itinerary.",
+        "Plan a European backpacking trip."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Data Exploration Agent",
+  "description": "Explores datasets through statistical analysis and interactive visualizations to uncover insights.",
+  "skills": [
+    {
+      "name": "Exploratory Data Analysis",
+      "description": "Performs systematic EDA with summary statistics, distribution analysis, and correlation discovery.",
+      "tags": [
+        "eda",
+        "statistics",
+        "data-exploration"
+      ],
+      "source": "science/exploratory-data-analysis",
+      "examples": [
+        "Explore feature distributions.",
+        "Find correlations between variables."
+      ]
+    },
+    {
+      "name": "CSV Data Visualizer",
+      "description": "Creates insightful charts and visualizations from CSV data.",
+      "tags": [
+        "visualization",
+        "csv",
+        "charts"
+      ],
+      "source": "basic/csv-data-visualizer",
+      "examples": [
+        "Visualize monthly sales trends.",
+        "Create a heatmap of correlations."
+      ]
+    }
+  ]
+}

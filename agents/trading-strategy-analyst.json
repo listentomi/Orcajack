@@ -1,0 +1,35 @@
+{
+  "name": "Trading Strategy Analyst",
+  "description": "Builds and evaluates trading strategies with backtesting and portfolio risk metrics.",
+  "skills": [
+    {
+      "name": "Backtesting Frameworks",
+      "description": "Creates robust backtesting systems addressing survivorship bias and transaction costs.",
+      "tags": [
+        "trading",
+        "backtesting",
+        "strategy"
+      ],
+      "source": "finance/backtesting-frameworks",
+      "examples": [
+        "Backtest a momentum strategy on S&P 500.",
+        "Evaluate with realistic transaction costs."
+      ]
+    },
+    {
+      "name": "Risk Metrics Calculation",
+      "description": "Calculates VaR, CVaR, Sharpe ratio, and other portfolio risk metrics.",
+      "tags": [
+        "risk",
+        "portfolio",
+        "var",
+        "metrics"
+      ],
+      "source": "finance/risk-metrics-calculation",
+      "examples": [
+        "Calculate VaR for a diversified portfolio.",
+        "Compute risk-adjusted returns."
+      ]
+    }
+  ]
+}

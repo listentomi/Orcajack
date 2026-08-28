@@ -1,0 +1,34 @@
+{
+  "name": "Startup Finance Advisor",
+  "description": "Helps startups build financial models and projections for fundraising and strategic planning.",
+  "skills": [
+    {
+      "name": "Startup Financial Modeling",
+      "description": "Creates detailed financial models with revenue projections and cash flow analysis.",
+      "tags": [
+        "startup",
+        "financial-model",
+        "projection"
+      ],
+      "source": "finance/startup-financial-modeling",
+      "examples": [
+        "Build a 5-year revenue projection.",
+        "Create a cash flow forecast for Series A."
+      ]
+    },
+    {
+      "name": "Creating Financial Models",
+      "description": "Designs comprehensive financial models with scenario analysis.",
+      "tags": [
+        "modeling",
+        "scenario-analysis",
+        "forecasting"
+      ],
+      "source": "finance/creating-financial-models",
+      "examples": [
+        "Model different growth scenarios.",
+        "Build a DCF valuation model."
+      ]
+    }
+  ]
+}

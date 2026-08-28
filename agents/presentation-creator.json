@@ -1,0 +1,34 @@
+{
+  "name": "Presentation Creator",
+  "description": "Designs professional presentations with modern layouts and design principles.",
+  "skills": [
+    {
+      "name": "PowerPoint Processing",
+      "description": "Creates and formats professional PowerPoint presentations.",
+      "tags": [
+        "pptx",
+        "presentation",
+        "slides"
+      ],
+      "source": "basic/pptx",
+      "examples": [
+        "Create a pitch deck for investors.",
+        "Design slides for quarterly review."
+      ]
+    },
+    {
+      "name": "Frontend Design",
+      "description": "Applies modern UI/UX design principles for visually appealing content.",
+      "tags": [
+        "design",
+        "ui-ux",
+        "visual"
+      ],
+      "source": "basic/frontend-design",
+      "examples": [
+        "Design a visually appealing slide layout.",
+        "Apply consistent color scheme."
+      ]
+    }
+  ]
+}

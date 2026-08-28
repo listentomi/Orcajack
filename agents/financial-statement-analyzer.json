@@ -1,0 +1,21 @@
+{
+  "name": "Financial Statement Analyzer",
+  "description": "Analyzes corporate financial statements including balance sheets, income statements, and cash flow reports to extract key insights.",
+  "skills": [
+    {
+      "name": "Analyzing Financial Statements",
+      "description": "Performs ratio analysis, trend analysis, and benchmarking on financial statements to deliver audit-ready insights.",
+      "tags": [
+        "finance",
+        "statements",
+        "ratio-analysis",
+        "audit"
+      ],
+      "source": "finance/analyzing-financial-statements",
+      "examples": [
+        "Analyze Apple's Q4 2024 balance sheet.",
+        "Compare gross margins across tech companies."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Financial Modeling Suite Agent",
+  "description": "Creates sophisticated financial models with complex Excel for startup and enterprise scenarios.",
+  "skills": [
+    {
+      "name": "Creating Financial Models",
+      "description": "Designs financial models with scenario and sensitivity analysis.",
+      "tags": [
+        "modeling",
+        "scenario",
+        "sensitivity"
+      ],
+      "source": "finance/creating-financial-models",
+      "examples": [
+        "Build a three-scenario model.",
+        "Create sensitivity analysis."
+      ]
+    },
+    {
+      "name": "Complex Excel Builder",
+      "description": "Builds sophisticated Excel workbooks with advanced formulas and macros.",
+      "tags": [
+        "excel",
+        "advanced",
+        "macros"
+      ],
+      "source": "basic/complex-excel-builder",
+      "examples": [
+        "Create a multi-sheet financial model.",
+        "Build linked assumptions."
+      ]
+    },
+    {
+      "name": "Startup Financial Modeling",
+      "description": "Tailors financial models for startup runway and burn rate.",
+      "tags": [
+        "startup",
+        "runway",
+        "burn-rate"
+      ],
+      "source": "finance/startup-financial-modeling",
+      "examples": [
+        "Calculate runway at current burn.",
+        "Model Series B scenarios."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Research Scientist Agent",
+  "description": "Conducts rigorous academic research with deep web research and engineering implementation.",
+  "skills": [
+    {
+      "name": "Research Engineer",
+      "description": "Provides rigorous research engineering focusing on theoretical correctness and implementation.",
+      "tags": [
+        "research",
+        "engineering",
+        "academic"
+      ],
+      "source": "science/research-engineer",
+      "examples": [
+        "Implement a novel attention mechanism.",
+        "Verify theoretical proofs with code."
+      ]
+    },
+    {
+      "name": "Deep Research",
+      "description": "Generates comprehensive research reports from multiple sources with citations.",
+      "tags": [
+        "research",
+        "report",
+        "citation"
+      ],
+      "source": "science/deep-research",
+      "examples": [
+        "Survey advances in diffusion models.",
+        "Compile literature review."
+      ]
+    }
+  ]
+}

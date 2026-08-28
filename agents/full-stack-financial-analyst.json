@@ -1,0 +1,48 @@
+{
+  "name": "Full-Stack Financial Analyst",
+  "description": "End-to-end financial analysis: data processing, deep analysis, and professional Excel report generation.",
+  "skills": [
+    {
+      "name": "Financial Analysis",
+      "description": "Comprehensive financial analysis with ratio, trend, and variance analysis.",
+      "tags": [
+        "finance",
+        "analysis",
+        "ratios"
+      ],
+      "source": "finance/financial-analysis",
+      "examples": [
+        "Analyze quarterly earnings trends.",
+        "Benchmark against industry averages."
+      ]
+    },
+    {
+      "name": "Excel Spreadsheet Processing",
+      "description": "Creates professional Excel reports with charts and conditional formatting.",
+      "tags": [
+        "excel",
+        "spreadsheet",
+        "charts"
+      ],
+      "source": "basic/xlsx",
+      "examples": [
+        "Generate a financial dashboard.",
+        "Create charts from financial data."
+      ]
+    },
+    {
+      "name": "CSV Data Visualizer",
+      "description": "Transforms raw CSV data into insightful visualizations.",
+      "tags": [
+        "csv",
+        "visualization",
+        "charts"
+      ],
+      "source": "basic/csv-data-visualizer",
+      "examples": [
+        "Visualize revenue data from CSV.",
+        "Create trend charts."
+      ]
+    }
+  ]
+}

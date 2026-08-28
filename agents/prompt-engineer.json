@@ -1,0 +1,21 @@
+{
+  "name": "Prompt Engineer",
+  "description": "Crafts and optimizes prompts for LLM interactions to maximize output quality and reliability.",
+  "skills": [
+    {
+      "name": "Anthropic Prompt Engineering",
+      "description": "Designs effective prompts using best practices for Claude and other LLMs to achieve optimal results.",
+      "tags": [
+        "prompt-engineering",
+        "llm",
+        "optimization",
+        "claude"
+      ],
+      "source": "basic/anthropic-prompt-engineer",
+      "examples": [
+        "Optimize this prompt for better accuracy.",
+        "Design a chain-of-thought prompt for math reasoning."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "China Travel Guide",
+  "description": "Specialized guide for travel in China covering cities, culture, transportation, and local tips.",
+  "skills": [
+    {
+      "name": "China Travel Guide",
+      "description": "Comprehensive travel guide for China with city guides, cultural tips, transportation advice, and local recommendations.",
+      "tags": [
+        "travel",
+        "china",
+        "culture",
+        "guide"
+      ],
+      "source": "travel/china-travel-guide",
+      "examples": [
+        "Plan a week in Beijing and Shanghai.",
+        "What are the must-see places in Chengdu?"
+      ]
+    }
+  ]
+}

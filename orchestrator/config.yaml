@@ -1,0 +1,28 @@
+llm:
+  default_model: "openai/Pro/deepseek-ai/DeepSeek-R1"
+  temperature: 0.2
+  max_tokens: 4096
+  api_base: "https://api.siliconflow.cn/v1"
+  # Switch models by changing default_model. SiliconFlow examples:
+  #   openai/Qwen/Qwen2.5-72B-Instruct
+  #   openai/deepseek-ai/DeepSeek-V3
+  #   openai/Pro/deepseek-ai/DeepSeek-R1
+  #   openai/Qwen/Qwen2.5-Coder-32B-Instruct
+  #   openai/meta-llama/Meta-Llama-3.1-70B-Instruct
+  # Other providers (set corresponding env vars & remove api_base):
+  #   openai/gpt-4o
+  #   anthropic/claude-sonnet-4-20250514
+  #   ollama/llama3
+
+agents_dir: "../agents"
+datasets_dir: "../Datasets"
+
+retry:
+  max_retries: 3
+  fallback_model: "openai/Qwen/Qwen2.5-7B-Instruct"
+
+concurrency:
+  max_workers: 5        # max parallel API calls
+  requests_per_minute: 60  # RPM rate limit (conservative; SiliconFlow allows 1000+)
+
+output_dir: "../results"

@@ -1,0 +1,34 @@
+{
+  "name": "ML Pipeline Engineer",
+  "description": "Builds end-to-end machine learning pipelines from data preparation to model deployment.",
+  "skills": [
+    {
+      "name": "ML Pipeline Workflow",
+      "description": "Automates data preparation, model training, validation, and deployment.",
+      "tags": [
+        "mlops",
+        "pipeline",
+        "deployment"
+      ],
+      "source": "science/ml-pipeline-workflow",
+      "examples": [
+        "Set up a training pipeline.",
+        "Automate model retraining."
+      ]
+    },
+    {
+      "name": "Scikit-learn Development",
+      "description": "Builds ML models with scikit-learn for classification, regression, and clustering.",
+      "tags": [
+        "scikit-learn",
+        "ml",
+        "classification"
+      ],
+      "source": "science/scikit-learn",
+      "examples": [
+        "Train a random forest classifier.",
+        "Optimize hyperparameters."
+      ]
+    }
+  ]
+}

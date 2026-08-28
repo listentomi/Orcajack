@@ -1,0 +1,48 @@
+{
+  "name": "Skill and Plugin Developer",
+  "description": "Creates AI agent skills and plugins for Claude Code and OpenAI Codex platforms.",
+  "skills": [
+    {
+      "name": "Anthropic Skill Creator",
+      "description": "Guides creation of skills for Claude Code with best practices.",
+      "tags": [
+        "skill-creation",
+        "claude",
+        "template"
+      ],
+      "source": "basic/skill-creator",
+      "examples": [
+        "Create a new skill for code review.",
+        "Design a data analysis skill."
+      ]
+    },
+    {
+      "name": "OpenAI Skill Creator",
+      "description": "Creates skills for OpenAI Codex with proper structure.",
+      "tags": [
+        "skill-creation",
+        "openai",
+        "codex"
+      ],
+      "source": "basic/openai-skill-creator",
+      "examples": [
+        "Build a Codex skill.",
+        "Create a skill with dependencies."
+      ]
+    },
+    {
+      "name": "Claude API",
+      "description": "Leverages Claude API for building intelligent applications.",
+      "tags": [
+        "claude",
+        "api",
+        "tools"
+      ],
+      "source": "basic/claude-api",
+      "examples": [
+        "Integrate skill with tool calling.",
+        "Build an API-powered agent."
+      ]
+    }
+  ]
+}

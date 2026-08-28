@@ -1,0 +1,48 @@
+{
+  "name": "Full-Service Travel Planner",
+  "description": "Plans complete trips with personalized recommendations, flight search, and route mapping.",
+  "skills": [
+    {
+      "name": "Travel Concierge",
+      "description": "Provides personalized travel recommendations.",
+      "tags": [
+        "travel",
+        "recommendations",
+        "personalized"
+      ],
+      "source": "travel/travel-concierge",
+      "examples": [
+        "Recommend a romantic getaway.",
+        "Suggest activities for families."
+      ]
+    },
+    {
+      "name": "Flights Search",
+      "description": "Searches and compares flights with price tracking.",
+      "tags": [
+        "flights",
+        "search",
+        "pricing"
+      ],
+      "source": "travel/flights-search",
+      "examples": [
+        "Find direct flights to Bali.",
+        "Track holiday flight prices."
+      ]
+    },
+    {
+      "name": "Google Maps Integration",
+      "description": "Calculates distances and provides directions.",
+      "tags": [
+        "maps",
+        "navigation",
+        "transit"
+      ],
+      "source": "travel/google-maps",
+      "examples": [
+        "Map route between hotel and attractions.",
+        "Calculate public transit time."
+      ]
+    }
+  ]
+}

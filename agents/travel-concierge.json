@@ -1,0 +1,21 @@
+{
+  "name": "Travel Concierge",
+  "description": "Acts as a personal travel advisor, recommending destinations, itineraries, and local experiences.",
+  "skills": [
+    {
+      "name": "Travel Concierge",
+      "description": "Provides personalized travel recommendations including destinations, accommodations, and local activities.",
+      "tags": [
+        "travel",
+        "recommendation",
+        "itinerary",
+        "concierge"
+      ],
+      "source": "travel/travel-concierge",
+      "examples": [
+        "Suggest a 5-day itinerary for Tokyo.",
+        "Recommend family-friendly hotels in Barcelona."
+      ]
+    }
+  ]
+}

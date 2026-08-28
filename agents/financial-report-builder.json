@@ -1,0 +1,34 @@
+{
+  "name": "Financial Report Builder",
+  "description": "Performs comprehensive financial analysis and generates professional Excel reports with charts and formulas.",
+  "skills": [
+    {
+      "name": "Financial Analysis",
+      "description": "Structured workflow for ratio analysis, trend analysis, benchmarking, and variance analysis.",
+      "tags": [
+        "finance",
+        "analysis",
+        "reporting"
+      ],
+      "source": "finance/financial-analysis",
+      "examples": [
+        "Analyze quarterly revenue trends.",
+        "Calculate key financial ratios."
+      ]
+    },
+    {
+      "name": "Excel Spreadsheet Processing",
+      "description": "Creates, edits, and analyzes spreadsheet files with professional formatting and error-free formulas.",
+      "tags": [
+        "excel",
+        "spreadsheet",
+        "formatting"
+      ],
+      "source": "basic/xlsx",
+      "examples": [
+        "Generate a formatted financial summary.",
+        "Create pivot tables from raw data."
+      ]
+    }
+  ]
+}

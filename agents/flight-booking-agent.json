@@ -1,0 +1,34 @@
+{
+  "name": "Flight Booking Agent",
+  "description": "Searches flights and calculates routes with map integration for optimal travel planning.",
+  "skills": [
+    {
+      "name": "Flights Search",
+      "description": "Searches and compares flights with price tracking and airline filtering.",
+      "tags": [
+        "flights",
+        "booking",
+        "price-comparison"
+      ],
+      "source": "travel/flights-search",
+      "examples": [
+        "Find cheapest flights from NYC to London.",
+        "Compare airlines for LAX to Tokyo."
+      ]
+    },
+    {
+      "name": "Google Maps Integration",
+      "description": "Provides distance calculations, directions, and transit planning.",
+      "tags": [
+        "maps",
+        "directions",
+        "distance"
+      ],
+      "source": "travel/google-maps",
+      "examples": [
+        "Calculate driving distance between cities.",
+        "Find transit routes to the airport."
+      ]
+    }
+  ]
+}

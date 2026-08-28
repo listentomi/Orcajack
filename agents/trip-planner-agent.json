@@ -1,0 +1,34 @@
+{
+  "name": "Trip Planner Agent",
+  "description": "Plans complete trips by searching options and creating structured itineraries with timelines.",
+  "skills": [
+    {
+      "name": "Travel Search",
+      "description": "Searches for flights, hotels, and activities to compile travel options.",
+      "tags": [
+        "travel",
+        "search",
+        "hotels"
+      ],
+      "source": "travel/travel-search",
+      "examples": [
+        "Search hotels in Paris.",
+        "Find top-rated restaurants in Rome."
+      ]
+    },
+    {
+      "name": "Planning Action",
+      "description": "Creates structured plans with roadmaps, timelines, and phased strategies.",
+      "tags": [
+        "planning",
+        "roadmap",
+        "timeline"
+      ],
+      "source": "travel/planning-action",
+      "examples": [
+        "Create a day-by-day itinerary for Japan.",
+        "Plan a phased road trip."
+      ]
+    }
+  ]
+}

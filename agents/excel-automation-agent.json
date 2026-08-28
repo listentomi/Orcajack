@@ -1,0 +1,34 @@
+{
+  "name": "Excel Automation Agent",
+  "description": "Automates Excel workflows including data analysis, macro creation, and report generation.",
+  "skills": [
+    {
+      "name": "Excel Analysis",
+      "description": "Analyzes Excel data with pivot tables, formulas, and statistical summaries.",
+      "tags": [
+        "excel",
+        "analysis",
+        "pivot-table"
+      ],
+      "source": "basic/excel-analysis",
+      "examples": [
+        "Create summary statistics from sales data.",
+        "Build a pivot table."
+      ]
+    },
+    {
+      "name": "Automating Excel",
+      "description": "Automates repetitive Excel tasks including formatting and formula generation.",
+      "tags": [
+        "excel",
+        "automation",
+        "macro"
+      ],
+      "source": "basic/automating-excel",
+      "examples": [
+        "Automate monthly report generation.",
+        "Create a macro for data cleanup."
+      ]
+    }
+  ]
+}

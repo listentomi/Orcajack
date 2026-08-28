@@ -1,0 +1,34 @@
+{
+  "name": "Senior Data Scientist Agent",
+  "description": "Provides senior-level data science expertise with deep learning and transformer models.",
+  "skills": [
+    {
+      "name": "Senior Data Scientist",
+      "description": "Expert guidance on ML architecture, feature engineering, and model optimization.",
+      "tags": [
+        "data-science",
+        "senior",
+        "architecture"
+      ],
+      "source": "science/senior-data-scientist",
+      "examples": [
+        "Advise on model architecture.",
+        "Review feature engineering approach."
+      ]
+    },
+    {
+      "name": "Transformers",
+      "description": "Applies transformer models for NLP, vision, and multimodal tasks.",
+      "tags": [
+        "transformers",
+        "nlp",
+        "deep-learning"
+      ],
+      "source": "science/transformers",
+      "examples": [
+        "Fine-tune a pre-trained model.",
+        "Deploy a transformer pipeline."
+      ]
+    }
+  ]
+}

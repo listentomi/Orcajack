@@ -1,0 +1,48 @@
+{
+  "name": "Multi-Agent Orchestrator",
+  "description": "Designs and orchestrates multi-agent systems using LangChain, CrewAI, and LangGraph frameworks.",
+  "skills": [
+    {
+      "name": "LangChain Agents",
+      "description": "Builds AI agents with LangChain for tool use and complex reasoning.",
+      "tags": [
+        "langchain",
+        "agents",
+        "tool-use"
+      ],
+      "source": "science/agents-langchain",
+      "examples": [
+        "Build a ReAct agent.",
+        "Implement memory-augmented agent."
+      ]
+    },
+    {
+      "name": "CrewAI Agents",
+      "description": "Creates collaborative multi-agent crews with role assignment.",
+      "tags": [
+        "crewai",
+        "multi-agent",
+        "collaboration"
+      ],
+      "source": "science/agents-crewai",
+      "examples": [
+        "Set up a research crew.",
+        "Design a customer service team."
+      ]
+    },
+    {
+      "name": "LangGraph Workflows",
+      "description": "Builds stateful graph-based agent workflows with conditional routing.",
+      "tags": [
+        "langgraph",
+        "workflow",
+        "state-machine"
+      ],
+      "source": "science/langgraph",
+      "examples": [
+        "Design a multi-step workflow.",
+        "Build a routing graph."
+      ]
+    }
+  ]
+}

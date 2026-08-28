@@ -1,0 +1,48 @@
+{
+  "name": "Startup Due Diligence Agent",
+  "description": "Comprehensive startup due diligence: CEO performance, market position, and financial health analysis.",
+  "skills": [
+    {
+      "name": "CEORater",
+      "description": "Evaluates CEO performance using proprietary metrics.",
+      "tags": [
+        "ceo",
+        "evaluation",
+        "leadership"
+      ],
+      "source": "finance/ceorater",
+      "examples": [
+        "Evaluate the CEO's track record.",
+        "Compare leadership scores."
+      ]
+    },
+    {
+      "name": "Market Research",
+      "description": "Analyzes market landscape and competitive positioning.",
+      "tags": [
+        "market",
+        "competitive",
+        "analysis"
+      ],
+      "source": "finance/market-research",
+      "examples": [
+        "Assess market share.",
+        "Identify key competitors."
+      ]
+    },
+    {
+      "name": "Analyzing Financial Statements",
+      "description": "Deep-dives into financial statements for health assessment.",
+      "tags": [
+        "financial-statements",
+        "audit",
+        "health"
+      ],
+      "source": "finance/analyzing-financial-statements",
+      "examples": [
+        "Review 3 years of financials.",
+        "Identify red flags."
+      ]
+    }
+  ]
+}

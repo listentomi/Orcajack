@@ -1,0 +1,21 @@
+{
+  "name": "CEO Performance Rater",
+  "description": "Evaluates S&P 500 CEO performance using proprietary scoring metrics for investment research.",
+  "skills": [
+    {
+      "name": "CEORater",
+      "description": "Provides CEO performance analytics for S&P 500 companies with proprietary scores and metrics.",
+      "tags": [
+        "finance",
+        "ceo-analysis",
+        "s&p500",
+        "investment"
+      ],
+      "source": "finance/ceorater",
+      "examples": [
+        "Rate the CEO of Tesla.",
+        "Compare CEO scores for top 5 banks."
+      ]
+    }
+  ]
+}

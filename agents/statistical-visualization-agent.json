@@ -1,0 +1,34 @@
+{
+  "name": "Statistical Visualization Agent",
+  "description": "Combines statistical analysis with publication-quality scientific figure generation.",
+  "skills": [
+    {
+      "name": "Statistical Analysis",
+      "description": "Performs statistical tests, hypothesis testing, regression, and ANOVA.",
+      "tags": [
+        "statistics",
+        "hypothesis-testing",
+        "regression"
+      ],
+      "source": "science/statistical-analysis",
+      "examples": [
+        "Run a t-test comparing two groups.",
+        "Perform ANOVA on experimental results."
+      ]
+    },
+    {
+      "name": "Scientific Visualization",
+      "description": "Creates publication-quality figures using matplotlib, seaborn, and plotly.",
+      "tags": [
+        "visualization",
+        "matplotlib",
+        "publication"
+      ],
+      "source": "science/scientific-visualization",
+      "examples": [
+        "Create a publication-ready scatter plot.",
+        "Generate a multi-panel figure."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Data Report Generator",
+  "description": "Transforms raw data into comprehensive Excel analyses and professional presentations.",
+  "skills": [
+    {
+      "name": "Exploratory Data Analysis",
+      "description": "Systematic data exploration with summary statistics.",
+      "tags": [
+        "eda",
+        "data-exploration",
+        "statistics"
+      ],
+      "source": "science/exploratory-data-analysis",
+      "examples": [
+        "Explore feature distributions.",
+        "Generate summary statistics."
+      ]
+    },
+    {
+      "name": "Excel Spreadsheet Processing",
+      "description": "Creates data analysis spreadsheets with charts.",
+      "tags": [
+        "excel",
+        "spreadsheet",
+        "analysis"
+      ],
+      "source": "basic/xlsx",
+      "examples": [
+        "Create an Excel dashboard.",
+        "Build interactive data tables."
+      ]
+    },
+    {
+      "name": "PowerPoint Processing",
+      "description": "Generates professional presentation slides.",
+      "tags": [
+        "pptx",
+        "presentation",
+        "reporting"
+      ],
+      "source": "basic/pptx",
+      "examples": [
+        "Create data insights presentation.",
+        "Generate executive summary slides."
+      ]
+    }
+  ]
+}

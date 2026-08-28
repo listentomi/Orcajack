@@ -1,0 +1,21 @@
+{
+  "name": "Transformers Expert",
+  "description": "Specializes in HuggingFace Transformers for NLP, computer vision, and multimodal tasks.",
+  "skills": [
+    {
+      "name": "Transformers",
+      "description": "Builds and fine-tunes transformer models using the HuggingFace ecosystem for various ML tasks.",
+      "tags": [
+        "transformers",
+        "huggingface",
+        "nlp",
+        "deep-learning"
+      ],
+      "source": "science/transformers",
+      "examples": [
+        "Fine-tune BERT for sentiment classification.",
+        "Run inference with a vision transformer model."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Quantitative Trading Agent",
+  "description": "Designs, backtests, and evaluates quantitative trading strategies with risk analysis and Excel reporting.",
+  "skills": [
+    {
+      "name": "Backtesting Frameworks",
+      "description": "Creates robust backtesting systems addressing survivorship bias and transaction costs.",
+      "tags": [
+        "backtesting",
+        "trading",
+        "quantitative"
+      ],
+      "source": "finance/backtesting-frameworks",
+      "examples": [
+        "Backtest a pairs trading strategy.",
+        "Evaluate with realistic slippage."
+      ]
+    },
+    {
+      "name": "Risk Metrics Calculation",
+      "description": "Calculates VaR, CVaR, Sharpe ratio, and portfolio risk metrics.",
+      "tags": [
+        "risk",
+        "var",
+        "sharpe"
+      ],
+      "source": "finance/risk-metrics-calculation",
+      "examples": [
+        "Compute 95% VaR.",
+        "Calculate risk-adjusted returns."
+      ]
+    },
+    {
+      "name": "Excel Analysis",
+      "description": "Presents trading results in structured Excel formats.",
+      "tags": [
+        "excel",
+        "analysis",
+        "reporting"
+      ],
+      "source": "basic/excel-analysis",
+      "examples": [
+        "Create performance attribution spreadsheet.",
+        "Build a trade log."
+      ]
+    }
+  ]
+}

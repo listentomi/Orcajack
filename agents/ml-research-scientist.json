@@ -1,0 +1,48 @@
+{
+  "name": "ML Research Scientist",
+  "description": "Full-cycle ML research: data analysis, model development, and rigorous statistical evaluation.",
+  "skills": [
+    {
+      "name": "Data Scientist",
+      "description": "Expert data science covering analytics, ML modeling, and statistical inference.",
+      "tags": [
+        "data-science",
+        "ml",
+        "analytics"
+      ],
+      "source": "science/data-scientist",
+      "examples": [
+        "Develop a churn prediction model.",
+        "Analyze A/B test results."
+      ]
+    },
+    {
+      "name": "Scikit-learn Development",
+      "description": "Implements ML models for classification, regression, and clustering.",
+      "tags": [
+        "scikit-learn",
+        "classification",
+        "clustering"
+      ],
+      "source": "science/scikit-learn",
+      "examples": [
+        "Train XGBoost with cross-validation.",
+        "Implement feature selection."
+      ]
+    },
+    {
+      "name": "Statistical Analysis",
+      "description": "Applies rigorous statistical methods for validation.",
+      "tags": [
+        "statistics",
+        "validation",
+        "hypothesis"
+      ],
+      "source": "science/statistical-analysis",
+      "examples": [
+        "Validate with significance tests.",
+        "Perform bootstrap confidence intervals."
+      ]
+    }
+  ]
+}

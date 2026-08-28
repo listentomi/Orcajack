@@ -1,0 +1,34 @@
+{
+  "name": "Document Coauthor Agent",
+  "description": "Collaboratively writes and formats professional documents in Word format.",
+  "skills": [
+    {
+      "name": "Document Co-authoring",
+      "description": "Facilitates collaborative document creation with version tracking and feedback.",
+      "tags": [
+        "collaboration",
+        "writing",
+        "editing"
+      ],
+      "source": "basic/doc-coauthoring",
+      "examples": [
+        "Help draft a project proposal.",
+        "Review and improve this document."
+      ]
+    },
+    {
+      "name": "Word Document Processing",
+      "description": "Creates formatted Word documents with professional layouts.",
+      "tags": [
+        "docx",
+        "formatting",
+        "layout"
+      ],
+      "source": "basic/docx",
+      "examples": [
+        "Format the draft into professional DOCX.",
+        "Add table of contents and headers."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+# Secrets -- never commit
+.env
+.env.*
+!.env.example
+*.key
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Benchmark data (fetch separately, see Datasets/README.md)
+Datasets/**/task.json
+Datasets/**/task.train.json
+Datasets/**/task.test.json
+Datasets/**/batch.*.json
+Datasets/**/*.csv
+
+# Run outputs
+results/*
+!results/.gitkeep
+*.log

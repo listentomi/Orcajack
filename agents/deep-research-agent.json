@@ -1,0 +1,21 @@
+{
+  "name": "Deep Research Agent",
+  "description": "Generates thorough, cited research reports from multiple web sources for in-depth analysis.",
+  "skills": [
+    {
+      "name": "Deep Research",
+      "description": "Multi-source deep research using web crawling and search tools to produce comprehensive cited reports.",
+      "tags": [
+        "research",
+        "web-search",
+        "citation",
+        "report"
+      ],
+      "source": "science/deep-research",
+      "examples": [
+        "Research the current state of quantum computing.",
+        "Write a comprehensive report on mRNA vaccine technology."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PDF Document Processor",
+  "description": "Processes, extracts, and transforms PDF documents for analysis and content generation.",
+  "skills": [
+    {
+      "name": "PDF Processing",
+      "description": "Handles PDF creation, parsing, text extraction, and format conversion with professional formatting.",
+      "tags": [
+        "document",
+        "pdf",
+        "extraction",
+        "conversion"
+      ],
+      "source": "basic/pdf",
+      "examples": [
+        "Extract tables from this PDF report.",
+        "Convert this document to PDF format."
+      ]
+    }
+  ]
+}

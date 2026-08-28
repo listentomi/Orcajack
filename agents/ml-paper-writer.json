@@ -1,0 +1,21 @@
+{
+  "name": "ML Paper Writer",
+  "description": "Assists in writing publication-ready ML/AI research papers with LaTeX templates and citation verification.",
+  "skills": [
+    {
+      "name": "ML Paper Writing",
+      "description": "Writes ML/AI papers with citation verification, LaTeX templates for top conferences, and structured academic writing.",
+      "tags": [
+        "academic",
+        "paper-writing",
+        "latex",
+        "ml-research"
+      ],
+      "source": "science/ml-paper-writing",
+      "examples": [
+        "Draft an introduction section for a transformer paper.",
+        "Generate a LaTeX template for NeurIPS submission."
+      ]
+    }
+  ]
+}

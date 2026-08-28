@@ -1,0 +1,34 @@
+{
+  "name": "Code Review and PR Agent",
+  "description": "Monitors pull requests, reviews code changes, and manages PR lifecycle.",
+  "skills": [
+    {
+      "name": "PR Babysitter",
+      "description": "Monitors PR status, CI checks, and review feedback.",
+      "tags": [
+        "pr",
+        "ci-cd",
+        "monitoring"
+      ],
+      "source": "basic/babysit-pr",
+      "examples": [
+        "Monitor this PR until merged.",
+        "Check CI status and reviews."
+      ]
+    },
+    {
+      "name": "OpenAI Docs Reference",
+      "description": "References OpenAI documentation for code best practices.",
+      "tags": [
+        "openai",
+        "documentation",
+        "reference"
+      ],
+      "source": "basic/openai-docs",
+      "examples": [
+        "Check latest API changes.",
+        "Reference function calling best practices."
+      ]
+    }
+  ]
+}

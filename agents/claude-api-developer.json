@@ -1,0 +1,34 @@
+{
+  "name": "Claude API Developer",
+  "description": "Builds applications using Claude API with MCP integrations and custom tool development.",
+  "skills": [
+    {
+      "name": "Claude API",
+      "description": "Develops applications using Claude's API with streaming, tool use, and best practices.",
+      "tags": [
+        "claude",
+        "api",
+        "development"
+      ],
+      "source": "basic/claude-api",
+      "examples": [
+        "Build a chatbot with Claude API.",
+        "Implement tool calling."
+      ]
+    },
+    {
+      "name": "MCP Builder",
+      "description": "Creates MCP servers for tool integrations and external service connections.",
+      "tags": [
+        "mcp",
+        "integration",
+        "tools"
+      ],
+      "source": "basic/mcp-builder",
+      "examples": [
+        "Build an MCP server for database access.",
+        "Create a custom tool integration."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "CSV Data Pipeline Agent",
+  "description": "Processes, cleans, and transforms CSV data with visualization for end-to-end data workflows.",
+  "skills": [
+    {
+      "name": "CSV Processor",
+      "description": "Parses, cleans, transforms, and merges CSV files with data validation.",
+      "tags": [
+        "csv",
+        "etl",
+        "cleaning"
+      ],
+      "source": "basic/csv-processor",
+      "examples": [
+        "Clean and deduplicate this CSV.",
+        "Merge multiple CSV files."
+      ]
+    },
+    {
+      "name": "CSV Data Visualizer",
+      "description": "Creates charts and visualizations from CSV data to reveal insights.",
+      "tags": [
+        "csv",
+        "visualization",
+        "charts"
+      ],
+      "source": "basic/csv-data-visualizer",
+      "examples": [
+        "Create a dashboard from CSV data.",
+        "Plot time series trends."
+      ]
+    }
+  ]
+}

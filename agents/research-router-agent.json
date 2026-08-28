@@ -1,0 +1,20 @@
+{
+  "name": "Research Router Agent",
+  "description": "Routes research questions to specialized downstream agents based on task type and domain.",
+  "skills": [
+    {
+      "name": "Task Routing",
+      "description": "Analyzes user requests and routes them to the most suitable specialized agent.",
+      "tags": [
+        "routing",
+        "orchestration",
+        "planning"
+      ],
+      "source": "science/langgraph",
+      "examples": [
+        "Send this coding task to the best agent.",
+        "Route this literature review request."
+      ]
+    }
+  ]
+}

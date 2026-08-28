@@ -1,0 +1,48 @@
+{
+  "name": "Scientific Paper Author",
+  "description": "Produces complete scientific papers with research, analysis, and publication-quality figures.",
+  "skills": [
+    {
+      "name": "ML Paper Writing",
+      "description": "Writes publication-ready papers with LaTeX and citation management.",
+      "tags": [
+        "paper",
+        "latex",
+        "academic-writing"
+      ],
+      "source": "science/ml-paper-writing",
+      "examples": [
+        "Draft the methods section.",
+        "Format for ICML submission."
+      ]
+    },
+    {
+      "name": "Scientific Visualization",
+      "description": "Generates publication-quality figures for journals.",
+      "tags": [
+        "figures",
+        "publication",
+        "visualization"
+      ],
+      "source": "science/scientific-visualization",
+      "examples": [
+        "Create Figure 1 showing architecture.",
+        "Generate comparison plots."
+      ]
+    },
+    {
+      "name": "Deep Research",
+      "description": "Conducts thorough literature review with proper citations.",
+      "tags": [
+        "literature-review",
+        "citations",
+        "research"
+      ],
+      "source": "science/deep-research",
+      "examples": [
+        "Survey related work in GNNs.",
+        "Find and cite 20 relevant papers."
+      ]
+    }
+  ]
+}

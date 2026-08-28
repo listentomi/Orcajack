@@ -1,0 +1,48 @@
+{
+  "name": "Web App QA Agent",
+  "description": "Tests and validates web applications with automated testing, design review, and quality assurance.",
+  "skills": [
+    {
+      "name": "Web App Testing",
+      "description": "Performs automated and manual testing of web applications.",
+      "tags": [
+        "testing",
+        "qa",
+        "automation"
+      ],
+      "source": "basic/webapp-testing",
+      "examples": [
+        "Write e2e tests for login flow.",
+        "Test responsive design."
+      ]
+    },
+    {
+      "name": "Frontend Design",
+      "description": "Reviews UI/UX design patterns and accessibility.",
+      "tags": [
+        "design",
+        "ui-ux",
+        "accessibility"
+      ],
+      "source": "basic/frontend-design",
+      "examples": [
+        "Audit accessibility.",
+        "Review UI consistency."
+      ]
+    },
+    {
+      "name": "Web Artifacts Builder",
+      "description": "Creates test fixtures and interactive prototypes.",
+      "tags": [
+        "prototyping",
+        "html",
+        "demo"
+      ],
+      "source": "basic/web-artifacts-builder",
+      "examples": [
+        "Build a prototype for A/B testing.",
+        "Create an interactive test harness."
+      ]
+    }
+  ]
+}

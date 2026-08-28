@@ -1,0 +1,48 @@
+{
+  "name": "Office Document Suite Agent",
+  "description": "Handles Word, Excel, and PDF for comprehensive office document productivity.",
+  "skills": [
+    {
+      "name": "Word Document Processing",
+      "description": "Creates and edits professional Word documents.",
+      "tags": [
+        "docx",
+        "word",
+        "document"
+      ],
+      "source": "basic/docx",
+      "examples": [
+        "Create a formatted business report.",
+        "Generate a contract template."
+      ]
+    },
+    {
+      "name": "Excel Spreadsheet Processing",
+      "description": "Processes spreadsheets with formulas and data analysis.",
+      "tags": [
+        "xlsx",
+        "excel",
+        "spreadsheet"
+      ],
+      "source": "basic/xlsx",
+      "examples": [
+        "Build a budget tracking spreadsheet.",
+        "Create data summary."
+      ]
+    },
+    {
+      "name": "PDF Processing",
+      "description": "Creates, parses, and converts PDF documents.",
+      "tags": [
+        "pdf",
+        "conversion",
+        "extraction"
+      ],
+      "source": "basic/pdf",
+      "examples": [
+        "Convert a report to PDF.",
+        "Extract data from scanned PDF."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+# Core pipeline
+litellm>=1.40
+pydantic>=2.0
+pyyaml>=6.0
+python-dotenv>=1.0
+
+# Stage 1: skill-subset mining
+mlxtend>=0.23
+networkx>=3.0
+python-louvain>=0.16
+sentence-transformers>=2.2
+numpy>=1.24
+pandas>=2.0
+
+# Optional: local (non-API) shadow / generator models
+# torch>=2.0
+# transformers>=4.40

@@ -1,0 +1,21 @@
+{
+  "name": "Web Artifacts Builder",
+  "description": "Creates interactive web artifacts, demos, and visualizations using modern web technologies.",
+  "skills": [
+    {
+      "name": "Web Artifacts Builder",
+      "description": "Builds interactive HTML/CSS/JS artifacts for demos, data visualization, and prototyping.",
+      "tags": [
+        "web",
+        "html",
+        "visualization",
+        "interactive"
+      ],
+      "source": "basic/web-artifacts-builder",
+      "examples": [
+        "Create an interactive chart for sales data.",
+        "Build a prototype landing page."
+      ]
+    }
+  ]
+}
