@@ -45,7 +45,7 @@ OrcaJack/
   build_skill_catalog.py          # One-off: build the skill catalog Stage 1 consumes
   split_dataset.py                # Disk-level train/test split (strict held-out guarantee)
   orchestrator/                   # The victim MAS orchestrator (routing target)
-  defenses/                       # 7 runtime + 3 registration-stage defenses
+  defenses/                       # 7 runtime + 3 registration-stage defenses (+ NoDefense)
   agents/                         # 42 benign agent profiles = the agent pool
   skills/                         # SKILL.md definitions for the 3 target domains (see skills/README.md)
   Datasets/                       # Split metadata; benchmark content fetched separately
@@ -83,7 +83,8 @@ python split_dataset.py \
 Three model roles are passed explicitly: `--shadow-model` is the orchestrator surrogate used to score fitness, `--gen-model` writes profiles, `--reasoning-model` critiques and repairs them.
 ```shell
 python generate_adversarial_agent.py \
-  --shadow-dataset Datasets/finance-agent-benchmark/split_42_40/task.train.json \
+  --shadow-dataset    Datasets/finance-agent-benchmark/split_42_40/task.train.json \
+  --stage1-batch-json Datasets/finance-agent-benchmark/split_42_40/batch.train.json \
   --shadow-model    "openai/qwen2.5-7b-instruct" --shadow-api-base    http://localhost:8004/v1 \
   --gen-model       "openai/qwen2.5-7b-instruct" --gen-api-base       http://localhost:8004/v1 \
   --reasoning-model "openai/qwen2.5-7b-instruct" --reasoning-api-base http://localhost:8004/v1 \
@@ -96,18 +97,21 @@ Outputs in `results/orcajack-finance/`:
 
 | File | Contents |
 |------|----------|
-| `stage1_candidate_skill_sets.json` | Mined skill subsets (FP-Growth + Louvain + MMR) |
+| `stage1_candidates.json` | Mined skill subsets (FP-Growth + Louvain + MMR) |
 | `stage2_initial_population.json` | Strategy-template seed population |
-| `top_k_final.json` | Final top-K adversarial agents |
-| `phase2_agents.json` | Same, in the single-agent format `evaluate.py` reads |
-| `per_generation_checkpoint.json` | Per-generation state |
+| `adversarial_agents/adversarial-agent-N.json` | **Evaluation input.** Per-agent profile, N = 1..K, best first |
+| `top_k_final.json` | Final top-K agents with full lineage and fitness history |
+| `strategy_library.json` | Functional / persuasive templates and their usage stats |
+| `checkpoints/gen_NNN.json` | Per-generation population and fitness metrics |
+
+> Pass `adversarial_agents/adversarial-agent-1.json` to the evaluation steps, **not** `top_k_final.json`. The latter is a lineage record whose skills are stored as bare strings, so injecting it would silently yield a skill-less agent and an incorrect routing rate.
 
 Add `--estimate-cost` to price a run before launching it. `--max-candidates 10` caps Stage 1 and is often both faster and slightly stronger on diverse-vocabulary domains.
 
 ### Step 4 — Evaluate on the held-out split
 ```shell
 python evaluate.py \
-  -a results/orcajack-finance/phase2_agents.json \
+  -a results/orcajack-finance/adversarial_agents/adversarial-agent-1.json \
   -d Datasets/finance-agent-benchmark/split_42_40/task.test.json \
   --model "openai/Pro/deepseek-ai/DeepSeek-R1" -y
 ```
@@ -116,15 +120,15 @@ The adversarial agent is injected into the 42-agent benign pool at evaluation ti
 ### Step 5 — Evaluate under defenses
 ```shell
 python evaluate_defense.py \
-  -a results/orcajack-finance/phase2_agents.json \
+  -a results/orcajack-finance/adversarial_agents/adversarial-agent-1.json \
   -d Datasets/finance-agent-benchmark/split_42_40/task.test.json \
   --orchestrator-model "openai/Pro/deepseek-ai/DeepSeek-R1" \
-  --defenses NoDefense Spotlighting CFGWhitelist PrivilegedPlanner \
-             AlignmentCheck TaskShield MELON \
-             ProfileConsistencyCheck ReputationPrior SchemaWhitelist \
+  --defenses no_defense promptguard spotlighting cfg_whitelist privileged_planner \
+             alignment_check task_shield melon \
+             profile_consistency reputation_prior schema_whitelist \
   -y -o results/defense-eval
 ```
-Runtime defenses inspect the profile or the routing decision; registration-stage defenses (`ProfileConsistencyCheck`, `ReputationPrior`, `SchemaWhitelist`) act on the pool before routing.
+Runtime defenses inspect the profile or the routing decision; registration-stage defenses (`profile_consistency`, `reputation_prior`, `schema_whitelist`) act on the pool before routing. `embedding_melon` is an additional embedding-based MELON variant; `melon` is the token-overlap implementation.
 
 ## What is not redistributed
 

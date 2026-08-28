@@ -7,8 +7,8 @@ Metrics (measured over all dataset tasks):
   select@3        — fraction where the agent is among the first 3 assignments
 
 Usage examples:
-    # Evaluate all agents in phase2_agents.json against one dataset
-    python evaluate.py -a results/adversarial_agents/phase2_agents.json \\
+    # Evaluate all agents in adversarial_agents/adversarial-agent-1.json against one dataset
+    python evaluate.py -a results/adversarial_agents/adversarial_agents/adversarial-agent-1.json \\
                        -d Datasets/finance-agent-benchmark/task.json
 
     # Multiple datasets
@@ -17,7 +17,7 @@ Usage examples:
                        -d Datasets/TravelPlanner/task.json
 
     # Save results, skip cost confirmation, 10 workers
-    python evaluate.py -a results/adversarial_agents/phase2_agents.json \\
+    python evaluate.py -a results/adversarial_agents/adversarial_agents/adversarial-agent-1.json \\
                        -d Datasets/finance-agent-benchmark/task.json \\
                        -w 10 -y -o results/eval_results.json
 """
@@ -220,7 +220,7 @@ def main() -> None:
     )
     parser.add_argument(
         "-a", "--agent-file", required=True,
-        help="Adversarial agent JSON (phase2_agents.json, phase3_agents.json, or single agent file)",
+        help="Adversarial agent JSON (adversarial_agents/adversarial-agent-1.json, phase3_agents.json, or single agent file)",
     )
     parser.add_argument(
         "-d", "--dataset", action="append", required=True, dest="datasets",

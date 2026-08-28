@@ -8,7 +8,7 @@ actually blocks the attack.
 
 Usage:
     python3 evaluate_defense.py \\
-        -a results/v20260426_finance_R1_L3/top3_agents.json \\
+        -a results/<run-name>/adversarial_agents/adversarial-agent-1.json \\
         -d Datasets/finance-agent-benchmark/split_42_40_balanced/task.test.json \\
         --orchestrator-model openai/qwen2.5-7b-instruct \\
         --orchestrator-api-base http://localhost:8004/v1 \\
@@ -16,7 +16,7 @@ Usage:
         --judge-api-base http://localhost:8004/v1 \\
         --defenses no_defense spotlighting cfg_whitelist privileged_planner alignment_check task_shield melon \\
         -w 4 -y \\
-        -o results/v20260429_defense_eval/finance_R1L3_qwen.json
+        -o results/defense-eval/finance_R1L3_qwen.json
 """
 from __future__ import annotations
 
@@ -33,15 +33,15 @@ from typing import Any
 
 import threading
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from orchestrator.agent_registry import AgentInfo, AgentRegistry, SkillInfo
 from orchestrator.orchestrator import Orchestrator
 
 from defenses import (
     NoDefense, PromptGuard, Spotlighting, CFGWhitelist, PrivilegedPlanner,
-    AlignmentCheck, TaskShield, MELON, EmbeddingMELON, MELONv2, MELONCrossDomain,
-    ProfileConsistencyCheck, OverclaimDetector, ReputationPrior, SchemaWhitelist,
+    AlignmentCheck, TaskShield, MELON, EmbeddingMELON,
+    ProfileConsistencyCheck, ReputationPrior, SchemaWhitelist,
 )
 
 DEFENSE_REGISTRY = {
@@ -54,11 +54,8 @@ DEFENSE_REGISTRY = {
     "task_shield":        TaskShield,
     "melon":              MELON,
     "embedding_melon":    EmbeddingMELON,
-    "melon_v2":           MELONv2,
-    "melon_crossdomain":  MELONCrossDomain,
     # Pool-side / registration-stage validation defenses.
     "profile_consistency": ProfileConsistencyCheck,
-    "overclaim_detector":  OverclaimDetector,
     "reputation_prior":    ReputationPrior,
     "schema_whitelist":    SchemaWhitelist,
 }

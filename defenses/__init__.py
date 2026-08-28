@@ -12,7 +12,7 @@ Implemented:
   - TaskShield      (Defense 4; Jia et al. ACL 2025, agent-selection adapted)
   - MELON           (Defense 5; Zhu et al. ICML 2025, agent-selection adapted)
 
-Skipped: PromptGuard 2 (Defense 1; requires HF model download).
+PromptGuard 2 (Defense 1) requires a HuggingFace model download on first use.
 """
 from __future__ import annotations
 from .base import DefendedOrchestrator, NoDefense
@@ -23,12 +23,9 @@ from .alignment_check import AlignmentCheck
 from .task_shield import TaskShield
 from .melon import MELON
 from .embedding_melon import EmbeddingMELON
-from .melon_v2 import MELONv2
-from .melon_crossdomain import MELONCrossDomain
 from .promptguard import PromptGuard
 # Pool-side / registration-stage validation defenses.
 from .profile_consistency import ProfileConsistencyCheck
-from .overclaim_detector import OverclaimDetector
 from .reputation_prior import ReputationPrior
 from .schema_whitelist import SchemaWhitelist
 
@@ -42,10 +39,7 @@ ALL_DEFENSES = [
     TaskShield,
     MELON,
     EmbeddingMELON,
-    MELONv2,
-    MELONCrossDomain,
     ProfileConsistencyCheck,
-    OverclaimDetector,
     ReputationPrior,
     SchemaWhitelist,
 ]
@@ -53,9 +47,7 @@ ALL_DEFENSES = [
 __all__ = [
     "DefendedOrchestrator", "NoDefense",
     "PromptGuard", "Spotlighting", "CFGWhitelist", "PrivilegedPlanner",
-    "AlignmentCheck", "TaskShield", "MELON", "EmbeddingMELON", "MELONv2",
-    "MELONCrossDomain",
-    "ProfileConsistencyCheck", "OverclaimDetector", "ReputationPrior",
-    "SchemaWhitelist",
+    "AlignmentCheck", "TaskShield", "MELON", "EmbeddingMELON",
+    "ProfileConsistencyCheck", "ReputationPrior", "SchemaWhitelist",
     "ALL_DEFENSES",
 ]

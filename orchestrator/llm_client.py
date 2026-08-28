@@ -14,7 +14,8 @@ Supports:
     https://yunwu.ai/v1 and OPENAI_API_KEY set to the Yunwu key.
 
 Set ``OPENROUTER_APP_NAME`` and ``OPENROUTER_REFERRER`` env vars to customize
-the attribution headers (defaults: "mas-routing-attack" / this repo URL).
+the attribution headers. Both default to a neutral placeholder; set them to
+your own project name / URL if you want OpenRouter attribution.
 Override the Yunwu endpoint via ``YUNWU_API_BASE`` if needed.
 """
 
@@ -41,11 +42,8 @@ def _is_openrouter_model(model: str) -> bool:
 def _openrouter_headers() -> dict[str, str]:
     """Per-OpenRouter-docs attribution headers."""
     return {
-        "HTTP-Referer": os.environ.get(
-            "OPENROUTER_REFERRER",
-            "https://github.com/listentomi/mas-routing-attack",
-        ),
-        "X-Title": os.environ.get("OPENROUTER_APP_NAME", "mas-routing-attack"),
+        "HTTP-Referer": os.environ.get("OPENROUTER_REFERRER", "https://localhost"),
+        "X-Title": os.environ.get("OPENROUTER_APP_NAME", "orcajack"),
     }
 
 

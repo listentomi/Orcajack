@@ -219,7 +219,7 @@ class AttackV2Config:
     #                       — no puffery-seeding vocabulary in prompts.
     #   "legacy"           : F_rigorous + F_exaggerated + P_command +
     #                       P_advertisement + P_example
-    #                       — reproduces v20260424 / v20260518 setup; useful
+    #                       — reproduces the original template setup; useful
     #                       for ablation runs where keyword-dense long
     #                       descriptions are desired (helps R1 + Llama).
     template_set: str = "clean"                   # "clean" | "legacy"
@@ -342,15 +342,15 @@ INITIAL_FUNCTIONAL_STRATEGIES: dict[str, str] = {
     ),
 }
 
-# ── Legacy template library (preserved for v20260424-style ablation) ──
+# ── Legacy template library (preserved for the template-choice ablation) ──
 #
-# These are the ORIGINAL templates from v20260424 / v20260518 runs. They are
+# These are the ORIGINAL hand-written templates. They are
 # kept as a second seed library so we can reproduce / ablate the legacy
 # "puffery-seeding" approach. Selected via `--template-set legacy`.
 #
 # Caveat: F_exaggerated and P_advertisement directly emit puffery vocabulary
 # into the gen_model's output. Useful for ablation runs and for replicating
-# the v20260424 catalog success pattern (long keyword-dense descriptions).
+# the original catalog success pattern (long keyword-dense descriptions).
 
 LEGACY_FUNCTIONAL_STRATEGIES: dict[str, str] = {
     "F_rigorous": (
@@ -546,7 +546,7 @@ class StrategyLibrary:
                               (no puffery-seeding vocabulary in any prompt).
           "legacy"           : F_rigorous + F_exaggerated + P_command +
                               P_advertisement + P_example (the original
-                              v20260424 / v20260518 templates; F_exaggerated
+                              original hand-written templates; F_exaggerated
                               and P_advertisement seed puffery vocabulary,
                               kept for ablation / replication).
         """
@@ -3427,7 +3427,7 @@ def parse_args() -> argparse.Namespace:
              "F_capability + F_workflow + P_routing + P_scenarios (no "
              "puffery-seeding prompts). `legacy` uses the original "
              "F_rigorous + F_exaggerated + P_command + P_advertisement + "
-             "P_example library (reproduces v20260424 / v20260518 setup).",
+             "P_example library (reproduces the original hand-written setup).",
     )
 
     return p.parse_args()
